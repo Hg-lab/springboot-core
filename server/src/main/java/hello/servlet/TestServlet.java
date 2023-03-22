@@ -12,7 +12,7 @@ import java.io.IOException;
 /*
 * http://localhost:8080/test
 * */
-@WebServlet(urlPatterns = "/test")
+@WebServlet(urlPatterns = "/test") // 애노테이션으로는 경로 변경이 유연하지 않다
 public class TestServlet extends HttpServlet {
 
     @Override
