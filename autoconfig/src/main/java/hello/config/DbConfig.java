@@ -32,7 +32,7 @@ public class DbConfig {
     }
 
     @Bean
-    public JdbcTempl ate jdbcTemplate() {
+    public JdbcTemplate jdbcTemplate() {
         log.info("jdbcTemplate 빈 등록");
         return new JdbcTemplate(dataSource());
     }
