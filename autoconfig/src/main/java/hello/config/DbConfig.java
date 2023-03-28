@@ -11,7 +11,7 @@ import org.springframework.transaction.TransactionManager;
 import javax.sql.DataSource;
 
 @Slf4j
-@Configuration
+//@Configuration // SpringBoot의 AutoConfiguration 테스트를 위해 주석처 - 스타터 내부에 의존성 포함
 public class DbConfig {
 
     @Bean
@@ -32,7 +32,7 @@ public class DbConfig {
     }
 
     @Bean
-    public JdbcTemplate jdbcTemplate() {
+    public JdbcTempl ate jdbcTemplate() {
         log.info("jdbcTemplate 빈 등록");
         return new JdbcTemplate(dataSource());
     }
