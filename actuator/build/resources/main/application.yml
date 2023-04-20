@@ -1,0 +1,23 @@
+management:
+  endpoint:
+#    shutdown:
+#      enabled: true # 기본값은 false
+    health:
+      show-components: always
+      #show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+
+info:
+  test-app:
+    name: hello-actuator
+    company: hk
