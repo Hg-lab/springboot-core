@@ -4,7 +4,7 @@ management:
 #      enabled: true # 기본값은 false
     health:
       show-components: always
-      #show-details: always
+#      show-details: always
   endpoints:
     web:
       exposure:
@@ -16,6 +16,9 @@ management:
       enabled: true
     env:
       enabled: true
+  server:
+    # port: 9292
+    port: 8080
 
 info:
   test-app:
